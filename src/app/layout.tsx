@@ -1,4 +1,4 @@
-import { Footer, Layout, Navbar } from "nextra-theme-docs";
+import { Layout, Navbar } from "nextra-theme-docs";
 import { Head, Search } from "nextra/components";
 import { getPageMap } from "nextra/page-map";
 import "nextra-theme-docs/style.css";
@@ -19,7 +19,7 @@ const navbar = (
     // ... Your additional navbar options
   />
 );
-const footer = <Footer>QA Clan ©</Footer>;
+// const footer = <Footer>QA Clan ©</Footer>;
 
 export default async function RootLayout({
   children,
@@ -45,7 +45,7 @@ export default async function RootLayout({
           navbar={navbar}
           pageMap={await getPageMap()}
           docsRepositoryBase="https://github.com/shuding/nextra/tree/main/docs"
-          footer={footer}
+          // footer={footer}
           search={search}
           editLink={null}
           feedback={{ content: null }}
