@@ -1,0 +1,27 @@
+# CI Integration Guide
+
+QAClan provides seamless **Continuous Integration (CI) Integration**, enabling users to automate test execution within their CI/CD pipeline. This ensures test cases run automatically whenever new code changes are pushed, helping to detect defects early and maintain software quality.
+
+---
+
+## Steps to Integrate CI in QAClan
+
+1. Go to the **CI Integration** section in QAClan.
+
+2. Choose your CI/CD platform (e.g., **GitHub**, **GitLab**, etc.).
+
+3. Click **Choose Test Cases** to select the test cases you want to run in the CI/CD pipeline.
+
+4. Click **Generate Code** to obtain a pre-configured CI/CD script.
+
+5. Copy and paste the generated script into your CI/CD configuration file (e.g., `.github/workflows/ci.yml` for GitHub Actions).
+
+6. Ensure the necessary **API Key** is configured for authentication.
+
+7. Push the changes to your repository. QAClan will trigger the test executions automatically upon each deployment.
+
+---
+
+![Alt text](/images/web/ci.png)
+
+By integrating QAClan into your CI/CD workflow, you can automate test execution, streamline development, and ensure software stability across all releases.
